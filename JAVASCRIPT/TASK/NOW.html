@@ -1,0 +1,73 @@
+
+ <!DOCTYPE html>
+
+ <html>
+
+ <head>
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <title>login</title>
+    <script>
+
+       
+
+        function logincheck()
+        { 
+            uid = document.getElementById("t1").value;
+            
+            alert(uid)
+
+            hh=document.getElementById("t2").value;
+            alert(hh)
+
+            if(uid=== "GMIT" && hh==="abc")
+                alert("valid")
+            else
+            alert("invalid")
+        }
+    </script>
+
+ </head>
+
+ <body>
+<form>
+
+<div align="center" class="container" style="background-color: rgba(166, 255, 0, 0.589);">
+
+    <label>USER ID</label>
+     <input type="text" id="t1"
+     maxlength="4"
+     placeholder="ENTER UID"
+     required
+     >
+
+ </br> </br>
+
+ <label>PASSWORD</label>
+ <input type="text" id="t2"
+     maxlength="4"
+     placeholder="ENTER UID"
+     required
+     
+
+ >
+</br> </br>
+ <input type="Submit" value="LOGIN" onclick="logincheck()" >
+ 
+</div>
+
+</form>
+
+
+</body>
+
+
+ </html>
+
+
+
+
+
+
+

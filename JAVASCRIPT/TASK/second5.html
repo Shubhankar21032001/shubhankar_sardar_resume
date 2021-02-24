@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+    <script>
+
+        var x=500; //global variable
+        let y=555;// let can not be used as a global variable
+
+        function f1()
+        {
+
+            var x=100;// local variable
+            let y=200;
+            alert(x);// local value call
+            alert(y);
+            alert(window.y);//undefined
+        
+            alert(window.x);//global value call
+            const z=50;
+            alert(z)
+           // z=z+10;//error
+            alert("WELCOME");
+        }
+
+      /* function f2()
+        {
+            var a=40;
+            var b=50;
+        }*/ 
+    </script>
+
+
+
+</head>
+
+<body>
+
+    <form>
+            <input type="submit" onclick="f1()">
+
+    </form>
+    
+
+
+</body>
+
+
+</html>
